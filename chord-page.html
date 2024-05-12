@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chord Generator</title>
+    <link rel="stylesheet" href="css/chord-page.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.3/html2canvas.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header_left_side">
+            <img class="channel_t-image" src="images/site_images/channel_t.png" alt="channel_t logo"/>
+        </div>
+        <div class="header_middle">
+            Chord Tool
+        </div>
+        <div class="header_right_side">
+            <img class="trev-rock_rock" src="images//site_images/logo.png" alt="trev-rock rock"/>
+        </div>
+    </header>
+    <div class="settings">
+        <div class="setting-item">
+            <label for="numberOfStrings">Number of strings:</label>
+            <input type="text" id="numberOfStrings" value="6" size="3">
+        </div>
+        <div class="setting-item">
+            <label for="numberOfFrets">Number of frets:</label>
+            <input type="text" id="numberOfFrets" value="4" size="3">
+        </div>
+        <div class="setting-item">
+            <label for="startingFret">Starting fret:</label>
+            <input type="text" id="startingFret" value="1" size="3">
+        </div>
+        <div class="setting-item">
+            <label for="noteColor">Note color:</label>
+            <input type="color" id="noteColor" name="noteColor" value="#000000">
+        </div>
+        <div class="setting-item">
+            <label for="titleColor">Title color:</label>
+            <input type="color" id="titleColor" name="titleColor" value="#000000">
+        </div>
+        <div class="setting-item">
+            <!-- <label for="backgroundColor">Background color:</label> -->
+            <input type="color" id="backgroundColor" name="backgroundColor" value="#FFFFFF">
+        </div>
+        <div class="setting-item">
+            <label for="toggleOpenStrings">Include open strings in name:</label>
+            <input type="checkbox" id="toggleOpenStrings" checked>
+        </div>
+        <div class="setting-item">
+            <label for="capoDropDown">Capo:</label>
+            <select id="capoDropDown"></select>
+        </div>
+    </div>
+    <div class="settings">
+        <div class="setting-item">
+            <label for="tuningInput">Tuning:</label>
+            <select id="tuningDropdown"></select>
+            <input type="text" id="tuningInput" value="EADGBE" selected>
+        </div>
+        <div class="setting-item">
+            <label for="title">Title:</label>
+            <input type="text" id="title">
+            <select id="titleDropdown"></select>
+        </div>
+        <div class="setting-item">
+            <button id="saveImage">Save</button>
+        </div>
+    </div>
+    <div class="editor">
+        <div class="fretboard-container">
+            <h2 class="title_label" id="title_label"></h2>
+            <div class="starting-fret-label" id="startingFretLabel"></div>
+            <div class="fretboard"></div>
+        </div>
+    </div>
+    <div class="navigation-bar">
+        <div class="nav-item">
+            <a href="index.html">
+                <img class="home-icon" src="images//site_images/homepage_icon.png" alt="return home"/>
+            </a>
+        </div>
+        <div class="nav-item">
+            <img class="back-icon" src="images//site_images/previous_page.png" alt="go back"/>
+        </div>
+    </div>
+    <script src="js//music/chord-page.js"></script>
+</body>
+</html>
